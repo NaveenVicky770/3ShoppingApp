@@ -15,4 +15,11 @@ export class DataStorageService{
           console.log(response);
         });
    }
+
+   fetchRecipes(){
+    this.http.get('https://recipe-book-e62ab-default-rtdb.firebaseio.com/recipes.json')
+      .subscribe(response =>{
+        console.log(response);
+      });
+   }
 }
