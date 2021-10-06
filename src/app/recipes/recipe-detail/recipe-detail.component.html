@@ -14,26 +14,32 @@
 </div>
 
 <div class="row">
+<!--  <div class="col-12">-->
+<!--    <div class="btn-group"-->
+<!--         appDropdown-->
+<!--    >-->
+<!--      <button-->
+<!--        type="button"-->
+<!--        class="btn btn-primary-->
+<!--        dropdown-toggle" data-toggle="dropdown">Manage Recipe</button>-->
+<!--      <ul class="dropdown-menu">-->
+<!--        <li><a href="#" class="dropdown-item">To Shopping List</a></li>-->
+<!--        <li><a href="#" class="dropdown-item">Edit Recipe</a></li>-->
+<!--        <li><a href="#" class="dropdown-item">Delete Recipe</a></li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
   <div class="col-12">
-    <div class="btn-group"
-         appDropdown
-    >
-      <button
-        type="button"
-        class="btn btn-primary
-        dropdown-toggle" data-toggle="dropdown">Manage Recipe</button>
-      <ul class="dropdown-menu">
-        <li><a href="#" class="dropdown-item">To Shopping List</a></li>
-        <li><a href="#" class="dropdown-item">Edit Recipe</a></li>
-        <li><a href="#" class="dropdown-item">Delete Recipe</a></li>
-      </ul>
-    </div>
+    <button class="btn btn-sm btn-primary mr-2"
+    (click)="onAddToShoppingList()">To Shopping List</button>
+    <button class="btn btn-sm btn-warning mr-2">Edit Recipe</button>
+    <button (click)="onDeleteRecipe()" class="btn btn-sm btn-danger mr-2">Delete Recipe</button>
   </div>
 </div>
 
 <div class="row">
   <div class="col-12">
-    {{recipe.description}}
+    <h6 class="my-2">{{recipe.description}}</h6>
   </div>
 </div>
 
