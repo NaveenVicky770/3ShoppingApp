@@ -17,6 +17,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {RecipeService} from "./recipes/recipe.service";
 import {ShoppingListService} from "./shopping-list/shopping-list.service";
 import { FooterComponent } from './footer/footer/footer.component';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FooterComponent } from './footer/footer/footer.component';
     ShoppingListComponent,
     ShoppingEditComponent,
     DropdownDirective,
-    FooterComponent
+    FooterComponent,
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,

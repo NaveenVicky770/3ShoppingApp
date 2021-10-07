@@ -18,6 +18,7 @@ export class DataStorageService{
       this.http.put('https://recipe-book-e62ab-default-rtdb.firebaseio.com/recipes.json',recipes)
         .subscribe( response =>{
           console.log(response);
+          alert("Recipes Saved in Firebase Successfully");
 
         });
    }

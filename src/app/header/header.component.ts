@@ -8,11 +8,11 @@ import {DataStorageService} from "../shared/data-storage.service";
 })
 export class HeaderComponent implements OnInit {
 
-  @Output()featureSelected = new EventEmitter<string>();
-
-  onSelect(feature: string){
-    this.featureSelected.emit(feature);
-  }
+  // @Output()featureSelected = new EventEmitter<string>();
+  //
+  // onSelect(feature: string){
+  //   this.featureSelected.emit(feature);
+  // }
 
   constructor(private dataStorageService: DataStorageService) {
   }

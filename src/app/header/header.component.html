@@ -5,8 +5,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a>
-      <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
+      <a class="nav-link " routerLinkActive="active" routerLink="/recipes">Recipes</a>
+      <a class="nav-link" routerLinkActive="active" routerLink="/shopping-list">Shopping List</a>
+<!--      <a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a>-->
+<!--      <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a>-->
       <a class="btn btn-primary ml-5"  (click)="onSavedata()">Save Data</a>
       <a class="btn btn-success ml-2"  (click)="onFetchData()">Fetch Data</a>
 <!--      <li class="nav-item dropdown" appDropdown>-->

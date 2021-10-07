@@ -1,9 +1,12 @@
 <a
-  href="#"
+  style="cursor: pointer; text-decoration: none"
+  [routerLink]="index"
+  routerLinkActive="active"
   class="list-group-item clearfix"
-  (click)="onSelected()">
+  >
+<!--  (click)="onSelected()" inside anchor tag-->
   <div>
-    <h4 class="text-primary">{{ recipe.name }}</h4>
+    <h4 class="text-dark">{{ recipe.name }}</h4>
     <p class="text-dark">{{ recipe.description }}</p>
   </div>
   <span class="pull-right">
